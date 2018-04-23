@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+<head>
+
+   <meta charset="UTF-8" />
+   <title>Application</title>
+
+</head>
+<body>
+
+
+<div>main.html 어플리케이션 실행</div>
+
+<div>Post방식의 처리</div>
+
+
+<!--form은 전송태그이며 /user라우터로 밑에 있는 데이터(input과 value값들)들을 전송한다 -->
+
+<form method="POST" action="/user">
+
+<!--input에는 name속성은 필수적으로 들어가야한다(name의 값으로 전달되게 된다)-->
+<p>이름:<input type="text" name="username"></p>
+<p>아이디:<input type="text" name="userid"></p>
+<p>비밀번호:<input type="password" name="userpass"></p>
+
+<input type="submit" value="전송">
+
+<p>
+
+
+
+
+</body>
+
+</html>
