@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<h1>Hello World</h1>
+
+<% var title="engtitle22" %>
+<h2><%=title%></h2>
+
+<!-- server.js에서 넘긴 result객체를 찍는다 -->
+<!-- 하지만 이렇게 하면 [object Object],형식으로 제대로 데이터가 보이지 않는다 -->
+<!-- 그래서 제대로된 데이터를 가져오기 위해서는 result를 배열형태의 데이터로 가져와야 한다 -->
+<!-- <div><%=result%></div> -->
+
+<%for(var i=0; i<result.length; i++){%>
+  <div>PersonID:<%=result[i].PersonID%>, LastName:<%=result[i].LastName%>, FirstName:<%=result[i].FirstName%>, Gender:<%=result[i].Gender%>, City:<%=result[i].City%></div>
+
+<%}%>
+
+
+
+  </body>
+</html>
